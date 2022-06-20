@@ -1,0 +1,40 @@
+// Includes string formatting to re-appropriate american style date in formula
+
+"MAX: "
+
++
+
+IF LEN(STR(DATEPART('day', MAX([Previous Year Dates])))) = 1
+    THEN 
+        "0" 
+        + 
+        STR(DATEPART('day', MAX([Previous Year Dates])))
+
+ELSE 
+
+    STR(DATEPART('day', MAX([Previous Year Dates])))
+
+END
+
++ 
+
+"/" 
+
++
+
+IF LEN(STR(DATEPART('month', MAX([Previous Year Dates])))) = 1
+    THEN 
+        "0" 
+        + 
+        STR(DATEPART('month', MAX([Previous Year Dates])))
+ELSE 
+    STR(DATEPART('month', MAX([Previous Year Dates])))
+END
+
++ 
+
+"/" 
+
++
+
+STR(DATEPART('year', MAX([Previous Year Dates])))

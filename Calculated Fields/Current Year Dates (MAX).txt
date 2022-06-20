@@ -1,0 +1,39 @@
+// Includes string formatting to re-appropriate american style date in formula
+
+"MAX: " 
++
+
+IF LEN(STR(DATEPART('day', MAX([Current Year Dates])))) = 1
+    THEN 
+        "0" 
+        + 
+        STR(DATEPART('day', MAX([Current Year Dates])))
+
+ELSE 
+
+    STR(DATEPART('day', MAX([Current Year Dates])))
+
++
+
+"/" 
+
++
+
+IF LEN(STR(DATEPART('month', MAX([Current Year Dates])))) = 1
+    THEN 
+        "0" 
+        + 
+        STR(DATEPART('month', MAX([Current Year Dates])))
+ELSE 
+    STR(DATEPART('month', MAX([Current Year Dates])))
+END
+
++
+
+"/" 
+
++
+
+STR(DATEPART('year', MAX([Current Year Dates])))
+
+END

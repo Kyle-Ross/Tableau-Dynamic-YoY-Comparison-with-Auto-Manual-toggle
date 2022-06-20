@@ -1,0 +1,1 @@
+SUM([Current Year Sales])-SUM([Previous Year Sales])

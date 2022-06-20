@@ -1,0 +1,3 @@
+IF ISNULL([Previous Year Sales]) THEN NULL
+ELSE [Order Date]
+END

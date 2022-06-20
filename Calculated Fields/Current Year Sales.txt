@@ -1,0 +1,27 @@
+// Parent IF determines if manual or automatic date range selection will be used
+
+IF 
+    [Use Manual Dates Toggle] = 'Automatic' or [Use Manual Dates Toggle] = 'Just Previous Year'
+    THEN
+        IF 
+            [FY Current Year] = [DatePart (Year)]
+            THEN [Sales]
+
+        ELSE NULL
+
+        END
+ELSEIF [Use Manual Dates Toggle] = 'Just Current Year' or [Use Manual Dates Toggle] = 'Both Years'
+    THEN
+        IF             
+            // Refers to the parameters used to manually set the comparison dates
+            [Order Date] >= [Current Year Week Manual MIN] AND
+            [Order Date] <= [Current Year Week Manual MAX]
+
+        THEN [Sales]
+
+        ELSE NULL
+
+        END
+ELSE
+    NULL
+END

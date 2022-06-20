@@ -1,0 +1,40 @@
+// Includes string formatting to re-appropriate american style date in formula
+
+"MIN: "
+
++
+
+IF LEN(STR(DATEPART('day', MIN([Previous Year Dates])))) = 1
+    THEN 
+        "0" 
+        + 
+        STR(DATEPART('day', MIN([Previous Year Dates])))
+
+ELSE 
+
+    STR(DATEPART('day', MIN([Previous Year Dates])))
+
+END
+
++
+
+"/"
+
++
+
+IF LEN(STR(DATEPART('month', MIN([Previous Year Dates])))) = 1
+    THEN 
+        "0" 
+        + 
+        STR(DATEPART('month', MIN([Previous Year Dates])))
+ELSE 
+    STR(DATEPART('month', MIN([Previous Year Dates])))
+END
+
++
+
+"/"
+
++
+
+STR(DATEPART('year', MIN([Previous Year Dates])))

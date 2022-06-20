@@ -1,0 +1,9 @@
+Parameter
+Use Manual Dates Toggle
+String
+
+List
+- Automatic
+- Both Years
+- Just Current Year
+- Just Previous year

@@ -1,0 +1,2 @@
+// Date as a year, as a number
+DATEPART('year', [Order Date])
