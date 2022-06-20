@@ -1,10 +1,13 @@
 # Tableau Dynamic YoY Comparison with Auto/Manual toggle
-Tableau has the ability to change the month of financial year start built in. However, the selection you make is ignored within calculated fields. This becomes a problem when your client has a financial year that does not start in January, and you need to make complex customisations involving financial years and quarters. Most commonly this issue would arise when you want to create a DatePart selector.
+A fully featured dynamic YoY Comparison dashboard, with automatic and manual date selection options.
 
-With this modular solution you can easily overcome this limitation, with logic that accounts for all possible financial year starting months.
-This will work with any date field, so just take the relevant calculated fields and parameters and drop them in your workbook. Then just set your desired financial year start month and you are good to go.
+In auto-mode, dates from the 'previous' year are automatically limited to those present in the data for the 'current' year. This automatically and easily prevents inaccurate YoY comparisons when viewing data for a year which is yet to be completed.
 
-You can test this by swapping the Start Month Selector in the dashboard and watching the FY and Quarter values accurately update.
+Manual mode allows the user to specify exactly the dates to be compared in the view.
+
+This approach is modular and could be easily adapted to any combination of date field and metric.
+
+The complex logic driving these features all occurs under the hood, with simple user customisable parameters allowing users to quickly and accurately perform YoY comparisons without any need for regular upkeep or maintence by the dashboard creator.
  
  ## Calculated Fields
 - [DatePart (Year)](https://github.com/Kyle-Ross/Tableau-Dynamic-YoY-Comparison/blob/0d210dcdecc756673fa17d05385fbb99fc8d6494/Calculated%20Fields/DatePart%20(Year).txt) - Gets the year of the date as an integer
