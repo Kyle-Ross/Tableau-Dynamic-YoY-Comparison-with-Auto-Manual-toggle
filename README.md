@@ -1,4 +1,4 @@
-# Tableau Dynamic YoY Comparison
+# Tableau Dynamic YoY Comparison with Auto/Manual toggle
 Tableau has the ability to change the month of financial year start built in. However, the selection you make is ignored within calculated fields. This becomes a problem when your client has a financial year that does not start in January, and you need to make complex customisations involving financial years and quarters. Most commonly this issue would arise when you want to create a DatePart selector.
 
 With this modular solution you can easily overcome this limitation, with logic that accounts for all possible financial year starting months.
@@ -7,13 +7,26 @@ This will work with any date field, so just take the relevant calculated fields 
 You can test this by swapping the Start Month Selector in the dashboard and watching the FY and Quarter values accurately update.
  
  ## Calculated Fields
-- [Order Date (Year Offset)](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Determines the correct FY for a given date based on the desired start month
-- [Order Date (Quarter Offset)](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Quarter%20Offset).txt) - Determines the correct quarter for a given date based on the desired start month
-- [Date Part Option](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Date%20Part%20Option.txt) - Takes the other fields and creates the Date Part fields for use in your dashboards
+- [DatePart (Year)](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Previous Year Sales](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Current Year Sales](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Previous Year Dates](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Current Year Dates](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Sales YoY Diff #](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Profit YoY Diff %](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Previous Year Dates (MIN)](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Previous Year Dates (MAX)](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Current Year Dates (MIN)](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
+- [Current Year Dates (MAX)](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Order%20Date%20(Year%20Offset).txt) - Description here!!
 
  ## Parameters
-- [Date Part Parameter](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Date%20Part%20Parameter.txt) - Selects the DatePart to show
-- [FY Start Month Selector](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/FY%20Start%20Month%20Selector.txt) - Sets the month in which the financial year starts
+- [Use Manual Dates Toggle](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/FY%20Start%20Month%20Selector.txt) - Sets the month in which the financial year starts
+- [FY Current Year](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/FY%20Start%20Month%20Selector.txt) - Sets the month in which the financial year starts
+- [FY Previous Year](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/FY%20Start%20Month%20Selector.txt) - Sets the month in which the financial year starts
+- [Current Year Week Manual MAX](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/Date%20Part%20Parameter.txt) - Selects the DatePart to show
+- [Current Year Week Manual MIN](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/FY%20Start%20Month%20Selector.txt) - Sets the month in which the financial year starts
+- [Previous Year Week Manual MAX](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/FY%20Start%20Month%20Selector.txt) - Sets the month in which the financial year starts
+- [Previous Year Week Manual MIN](https://github.com/Kyle-Ross/Tableau-Dynamic-FY-Start-with-datepart-toggle/blob/80f04ee26c14aa85dfb8c8efb59874f16f0e07db/Calculated%20Field%20Formulas/FY%20Start%20Month%20Selector.txt) - Sets the month in which the financial year starts
  
  ## Dashboard
    [![tableau dynamic FY Start](https://img.shields.io/badge/review_on_tableau_public-1DA1F2?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/kyle.ross6552/viz/DynamicYoYComparison/DynamicYoYComparison)
