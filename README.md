@@ -21,12 +21,12 @@ You can test this by swapping the Start Month Selector in the dashboard and watc
 
  ## Parameters
 - [Use Manual Dates Toggle](https://github.com/Kyle-Ross/Tableau-Dynamic-YoY-Comparison/blob/0d210dcdecc756673fa17d05385fbb99fc8d6494/Parameters/Use%20Manual%20Dates%20Toggle.txt) - Sets the month in which the financial year starts
-- [FY Current Year]() - Sets the month in which the financial year starts
-- [FY Previous Year]() - Sets the month in which the financial year starts
-- [Current Year Week Manual MAX]() - Selects the DatePart to show
-- [Current Year Week Manual MIN]() - Sets the month in which the financial year starts
-- [Previous Year Week Manual MAX]() - Sets the month in which the financial year starts
-- [Previous Year Week Manual MIN]() - Sets the month in which the financial year starts
+- [Previous Year](https://github.com/Kyle-Ross/Tableau-Dynamic-YoY-Comparison-with-Auto-Manual-toggle/blob/9a15c6676d8c9f408b0c74eb4782ece537ca7ce1/Parameters/Previous%20Year.txt) - Sets the month in which the financial year starts
+- [Current Year](https://github.com/Kyle-Ross/Tableau-Dynamic-YoY-Comparison-with-Auto-Manual-toggle/blob/9a15c6676d8c9f408b0c74eb4782ece537ca7ce1/Parameters/Current%20Year.txt) - Sets the month in which the financial year starts
+- [Previous Year Week Manual MIN](https://github.com/Kyle-Ross/Tableau-Dynamic-YoY-Comparison-with-Auto-Manual-toggle/blob/9a15c6676d8c9f408b0c74eb4782ece537ca7ce1/Parameters/Previous%20Year%20Week%20Manual%20MIN.txt) - Sets the month in which the financial year starts
+- [Previous Year Week Manual MAX](https://github.com/Kyle-Ross/Tableau-Dynamic-YoY-Comparison-with-Auto-Manual-toggle/blob/9a15c6676d8c9f408b0c74eb4782ece537ca7ce1/Parameters/Previous%20Year%20Week%20Manual%20MAX.txt) - Sets the month in which the financial year starts
+- [Current Year Week Manual MIN](https://github.com/Kyle-Ross/Tableau-Dynamic-YoY-Comparison-with-Auto-Manual-toggle/blob/9a15c6676d8c9f408b0c74eb4782ece537ca7ce1/Parameters/Current%20Year%20Week%20Manual%20MIN.txt) - Sets the month in which the financial year starts
+- [Current Year Week Manual MAX](https://github.com/Kyle-Ross/Tableau-Dynamic-YoY-Comparison-with-Auto-Manual-toggle/blob/9a15c6676d8c9f408b0c74eb4782ece537ca7ce1/Parameters/Current%20Year%20Week%20Manual%20MAX.txt) - Selects the DatePart to show
  
  ## Dashboard
    [![tableau dynamic FY Start](https://img.shields.io/badge/review_on_tableau_public-1DA1F2?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/kyle.ross6552/viz/DynamicYoYComparison/DynamicYoYComparison)
