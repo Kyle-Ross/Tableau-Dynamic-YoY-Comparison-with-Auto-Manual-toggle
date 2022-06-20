@@ -5,6 +5,8 @@ In auto-mode, dates from the 'previous' year are automatically limited to those 
 
 Manual mode allows the user to specify exactly the dates to be compared in the view.
 
+Visibility is provided using string formatted date and info fields so the user is always aware of the dates being compared in both automatic and manual mode.
+
 This approach is modular and could be easily adapted to any combination of date field and metric.
 
 The complex logic driving these features all occurs under the hood, with simple user customisable parameters allowing users to quickly and accurately perform YoY comparisons without any need for regular upkeep or maintence by the dashboard creator.
